@@ -1,0 +1,82 @@
+{
+  "name": "react-next-material-typescript-template",
+  "version": "1.1.1",
+  "description": "A simple opinionated template project for spinning up React demos using Next.js, Material-UI, etc.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p ${PORT:-3000}",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "start-local": "NODE_ENV=production next start -p ${PORT:-8080}",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "test": "jest --collectCoverage true",
+    "unit": "jest --testRegex '(?<!integration\\.)test\\.ts(x?)$'",
+    "integration": "jest --testRegex 'integration\\.test\\.ts(x?)$'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blainegarrett/react-next-material-typescript-template.git"
+  },
+  "keywords": [
+    "nextjs",
+    "node",
+    "react",
+    "ssr",
+    "typescript",
+    "hooks"
+  ],
+  "author": "Blaine Garrett <blaine@blainegarrett.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blainegarrett/react-next-material-typescript-template/issues"
+  },
+  "homepage": "https://github.com/blainegarrett/react-next-material-typescript-template#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.3",
+    "express": "^4.17.1",
+    "next": "^10.0.9",
+    "next-offline": "^5.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "^14.6.1",
+    "@types/react": "^16.9.48",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-import-resolver-typescript": "^2.2.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".test.ts(x?)$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "jsdom",
+    "resetMocks": true,
+    "moduleNameMapper": {
+      "~/(.*)$": "<rootDir>/$1"
+    }
+  }
+}
