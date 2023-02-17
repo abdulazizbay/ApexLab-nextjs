@@ -1,24 +1,20 @@
-import React from 'react';
-import {
-  NextPage,
-  GetServerSidePropsContext, GetServerSidePropsResult,
-} from 'next';
-import IndexContent from '~/screens/IndexContent';
+import Navbar from '../src/components/navbar/Navbar'
+import TitleSalesForceLab from '../src/components/titleSalesForceLab/titleSalesForceLab'
+import Head from 'next/head'
 
-interface IndexProps { greeting: string }
-
-const IndexPage:NextPage<IndexProps> = (props: IndexProps) => {
-  const { greeting } = props;
+export default function Home() {
   return (
-    <IndexContent greeting={greeting} />
-  );
-};
-
-export async function getServerSideProps(context: GetServerSidePropsContext):
-Promise<GetServerSidePropsResult<IndexProps>> {
-  return {
-    props: { greeting: 'Hello From The Server' }, // will be passed to the page component as props
-  };
+    <>
+      <Head>
+        <title>Apexlab | Salesforce</title>
+        <meta name="keywords" content="apexlab,programming jobs, freelance" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet='utf-8' />
+      </Head>
+      <main >
+        <Navbar/>
+        <TitleSalesForceLab/>
+      </main>
+    </>
+  )
 }
-
-export default IndexPage;

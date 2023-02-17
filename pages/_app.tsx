@@ -7,6 +7,8 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '~/theme';
 
+import '../src/styles/global.css'
+import { Inter } from '@next/font/google'
 export default function MyApp(props: AppProps): JSX.Element {
   const { Component, pageProps } = props;
 
@@ -28,7 +30,10 @@ export default function MyApp(props: AppProps): JSX.Element {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        
         <Component {...pageProps} />
+        
+
       </ThemeProvider>
     </>
   );
