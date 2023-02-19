@@ -11,7 +11,7 @@ function AboutCompany() {
             <p>Мы сообщество экспертов платформы Salesforce и 1С<br/>
                 Ваш надежный партнер по в недрению и<br/> сопровождению
             </p>
-            <div className='link'><Link href='/'> Подробнее</Link></div>
+            <Link href='/'><div className='link'> Подробнее</div></Link>
         </div>
         <div className='image-container'>
             <Image src='/static/Group5.png' width={330} height={190}/>
@@ -32,14 +32,13 @@ const StyledAboutCompany = styled.div`
             margin: 33px 0 33px 0;
         }
         .link{
-            background-color:black;
+            background-color: #28293D;
             width:183px;
             height:44px;
             padding-top: 10px;
             text-align:center;
-            
+            color: #FFFFFF;
             cursor: pointer;
-        
             a{
                 color:white;
                 text-decoration: none;;

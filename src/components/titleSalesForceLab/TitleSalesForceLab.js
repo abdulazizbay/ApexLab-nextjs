@@ -12,7 +12,7 @@ function TitleSalesForceLab() {
               <div className='big-image'>
                 <Image src='/static/Rectangle93.png' width={320} height={420} />
               </div>
-              <div  className='titleWithImages'>
+              <div  className='title-and-image'>
                 <h1>Selesforce Lab</h1>
                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor<br/> do amet sint. Velit officia consequat duis enim velit mollit.</p>
                   {/* Image carousel component */}
@@ -42,9 +42,10 @@ const StyledTitle = styled.div`
       img{
         width: 250px;
         height: 340px;
+        
       }
     }
-    .titleWithImages{
+    .title-and-image{
       margin-left:38px;
       h1{
         font-weight: 700;

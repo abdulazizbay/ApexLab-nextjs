@@ -1,7 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 body {
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-      'Arial', sans-serif;
     padding: 0px;
     margin: 0;
   }
@@ -11,7 +9,8 @@ body {
  
   * {
     margin: 0;
-    
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
   }
 
   html, body {
@@ -39,3 +38,8 @@ body {
   #root, #__next {
     isolation: isolate;
   }
+  *::placeholder {
+    color: #959595;
+    font-size: 9px;
+    padding: 2px;
+}

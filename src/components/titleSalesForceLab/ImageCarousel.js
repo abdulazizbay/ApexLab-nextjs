@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Image from 'next/image'
 import styled from 'styled-components'
 import { useRef } from 'react';
@@ -30,10 +29,7 @@ function ImageCarousel() {
                      carouselRef?.current?.goTo(0);
                   }, 4000); 
              }}
-             >
-                                       
-                                      
-                    
+             >  
             <div className='card'><Image src='/static/Rectangle94.png' alt="First slide" height={168 } width={260  }/></div>
             <div className='card'><Image src='/static/Rectangle95.png' alt="Second slide" height={168 } width={260 } /></div>
             <div className='card'><Image src='/static/Rectangle96.png' alt="Third slide" height={168 } width={260  } /></div>
@@ -57,9 +53,7 @@ const StyledImageCarousel = styled.div`
           align-items:center;
           
         }
-
             .rec.rec-dot {
-              
               width: 8px;
               height: 8px;
               margin: 20px 10px 0 0;
