@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styled from 'styled-components'
 import Link from 'next/link'
+import Button from '../dynamic-mixins/Button'
 function Footer() {
   return(
     <>
@@ -19,7 +20,7 @@ function Footer() {
             <Link href='/call'><p> +998 (33) 333-33-33</p></Link>
           </div>
           <div className='button'>
-            <Link href='/'><div>Другие Услуги</div></Link>
+            <Button><Link href='/'>Другие Услуги</Link></Button>
           </div>
         </div>
       </StyledFooter>
@@ -43,17 +44,6 @@ const StyledFooter = styled.div`
         cursor: pointer;
       }
     }
-    .button{
-      background-color: #28293D;
-      color: white;
-      width: 160px;
-      height: 34px;
-      font-size: smaller;
-      text-align:center;
-      padding-top: 8px;
-      &:hover{
-        cursor: pointer;
-      }
-      }
+    
   }
 `
