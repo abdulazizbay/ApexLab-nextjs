@@ -7,7 +7,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '~/theme';
 
 import '../src/styles/global.css'
-import { Inter } from '@next/font/google'
 export default function MyApp(props: AppProps): JSX.Element {
   const { Component, pageProps } = props;
 
