@@ -50,5 +50,4 @@ const StyledNavbar = styled.div`
       margin-left: 298px;
     }
   }
-  
 `
